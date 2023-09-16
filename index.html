@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" -->
+    <!-- integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /> -->
+
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
+        <div class="digital-clock">
+            <div class="dg-clock">00:00:00</div>
+        </div>
+    </div>
+    <div class="task-container">
+        <!-- Form -->
+
+        <!--//Form -->
+        <!-- List of tasks -->
+        <div class="card bg-gray">
+            <div class="card-header">Додати нове завдання</div>
+            <div class="card-body">
+                <button class="add-Name">addName</button>
+                <form id="form">
+                    <div class="name-task-input">
+                        <input type="text" class="enter-name" placeholder="Ім'я" />
+                        <select name="name" value="1" id="selectName">
+                            <!-- <option class="optChoose" value="" disabled selected>Choose</option> -->
+                        </select>
+                        <input type="text" class="enter-task" placeholder="Текст завдання">
+                    </div>
+                    <button class="submit-task">Додати</button>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-title">Завдань на сьогодні немає</div>
+            <ul id="tasksList" class="list-group list-group-flush">
+
+            </ul>
+        </div>
+        <div class="sort-button">
+            <button class="sort-tasks">Sort</button>
+        </div>
+
+
+    </div>
+    <!-- //List of tasks -->
+
+
+    </div>
+
+    <script src="/JS/code.js"></script>
+</body>
+
+</html>
+
+<!-- 1 инпут для ввода дел
+//                 создание блока где будут отрисовываться введенные в инпут дела
+
+2 создание блока где будут размещаться часы
+//                 создание еще одно маленького блока под часами для цифрвых часов
+//                 и сделать круглый циферблат
+//                 сделать стрелки
+
+3 создает блок для ввода имени -->
